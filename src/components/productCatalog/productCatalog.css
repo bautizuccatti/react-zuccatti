@@ -1,0 +1,44 @@
+
+.product-card {
+  background-color: #000000;
+  color: #fff;
+  border: 1px solid #000000;
+  border-radius: 0; 
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0; 
+}
+
+.product-name {
+  color: #ffffff;
+}
+
+.product-description {
+  color: #ccc;
+  font-size: 12px;
+}
+
+.product-price {
+  color: #fff;
+}
+
+.product-button {
+  background-color: #000000; 
+  border-color: #000000;
+  border-radius: 0; 
+}
+
+.product-button:hover {
+  background-color: #252525; 
+  border-color: #252525;
+  border-radius: 0; 
+}
+
+.product-button:active{
+  background-color: #000000;
+  border-color:#000000;
+}
