@@ -186,8 +186,6 @@ const ProductCatalog = () => {
   };
 
   const handleAddToCart = (product, selectedSize) => {
-    // Implementa la lógica para agregar el producto al carrito aquí
-    // Puedes usar un contexto global o pasar una función desde el componente padre
     console.log(`Agregado al carrito: ${product.name}, Talla: ${selectedSize}`);
   };
 

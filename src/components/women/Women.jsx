@@ -3,12 +3,9 @@ import ItemDetailContainer from '../itemDetailContainer/itemDetailContainer';
 import { Card, Button } from 'react-bootstrap';
 import './Women.css';
 
-
 const Women = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
-
-
 
   const womenProducts = [
     {
@@ -71,10 +68,6 @@ const Women = () => {
   const handleClose = () => {
     setShowModal(false);
     setSelectedProduct(null);
-  };
-
-  const handleAddToCart = () => {
-    // Implementa la lógica para agregar el producto al carrito aquí
   };
 
   return (

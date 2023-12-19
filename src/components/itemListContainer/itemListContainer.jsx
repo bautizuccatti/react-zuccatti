@@ -10,24 +10,21 @@ const ItemListContainer = ({ greeting }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Simula una llamada a una API (reemplaza esto con tu lógica de carga real)
         const response = await fetch('https://api.ejemplo.com/items');
         const data = await response.json();
 
         setItems(data);
-        setLoading(false);  // Marca la carga como completa
+        setLoading(false);  
       } catch (error) {
         console.error('Error al obtener datos:', error);
-        setLoading(false);  // Marca la carga como completa incluso si hay un error
+        setLoading(false);  
       }
     };
 
-    // Simulación de demora de 2 segundos
     const delay = setTimeout(() => {
       fetchData();
     }, 2000);
 
-    // Limpia el temporizador en el desmontaje del componente
     return () => clearTimeout(delay);
   }, []);
 
