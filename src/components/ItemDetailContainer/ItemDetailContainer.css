@@ -1,0 +1,44 @@
+.item-detail-modal {
+    .modal-content {
+      border-radius: 0; 
+      background-color: black; 
+    }
+  
+    .closeButton {
+      color: white; 
+    }
+  
+    .modal-title,
+    .modal-description,
+    .modal-label {
+      color: white; 
+    }
+  
+    .modal-image {
+      width: 100%;
+      height: 100%;
+      border-radius: 0; 
+    }
+  
+    .size-options {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .buy-button{
+        border-radius: 0;
+        background-color: white;
+        border-color: black;
+        color: black;
+    }
+
+    .buy-button:hover{
+        background-color: rgb(32, 32, 32);
+        border-color: white;
+        color: white;
+      }
+    
+      .size-options label{
+        color: white;
+      }
+  }

@@ -1,0 +1,213 @@
+[
+  {
+    "id": 1,
+    "name": "Remera Stones",
+    "description": "6 cuotas sin interés de $4.665",
+    "price": 27990,
+    "stock": 8,
+    "image": "img/remera-stones.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Bermuda Camel",
+    "description": "6 cuotas sin interés de $7.498",
+    "price": 44990,
+    "stock": 2,
+    "image": "img/bermuda-camel.webp"
+  },
+  {
+    "id": 3,
+    "name": "Camisa Legend",
+    "description": "6 cuotas sin interés de $9.998",
+    "price": 59990,
+    "stock": 14,
+    "image": "img/camisa-legend.webp"
+  },
+  {
+    "id": 4,
+    "name": "Remera Iron Maiden",
+    "description": "6 cuotas sin interés de $4.665",
+    "price": 27900,
+    "image": "img/remera-iron-maiden.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Borcego Sid",
+    "description": "6 cuotas sin interés de $19.983",
+    "price": 119900,
+    "stock": 0,
+    "status": "sin stock",
+    "image": "img/borcegos.webp"
+  },
+  {
+    "id": 6,
+    "name": "Bermuda Stevie Virginia",
+    "description": "6 cuotas sin interés de $8.332",
+    "price": 49990,
+    "stock": 2,
+    "image": "img/bermuda-stevie-virginia.webp"
+  },
+  {
+    "id": 7,
+    "name": "Buzo Rolling Stones",
+    "description": "6 cuotas sin interés de $7.498",
+    "price": 44990,
+    "stock": 8,
+    "image": "img/buzo-rolling.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Camisa Manga Corta Richard",
+    "description": "6 cuotas sin interés de $9.998",
+    "price": 59990,
+    "stock": 1,
+    "image": "img/camisa-manga-corta-richard.webp"
+  },
+  {
+    "id": 9,
+    "name": "Medias Nirvana",
+    "description": "6 cuotas sin interés de $998",
+    "price": 5990,
+    "stock": 3,
+    "image": "img/medias-nirvana.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Remera AC/DC",
+    "description": "6 cuotas sin interés de $4.665",
+    "price": 27990,
+    "stock": 2,
+    "image": "img/remera-acdc.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Remera Guns",
+    "description": "6 cuotas sin interés de $4.665",
+    "price": 27990,
+    "stock": 4,
+    "image": "img/remera-guns.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Remera Black Sabbath",
+    "description": "6 cuotas sin interés de $4.665",
+    "price": 27990,
+    "stock": 2,
+    "image": "img/remera-black-sabbath.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Remera Masfits",
+    "description": "6 cuotas sin interés de $4.665",
+    "price": 27990,
+    "stock": 3,
+    "image": "img/remera-masfits.webp"
+  },
+  {
+    "id": 14,
+    "name": "Remera MegaDeth",
+    "description": "6 cuotas sin interés de $4.665",
+    "price": 27990,
+    "stock": 0,
+    "image": "img/remera-megadeth.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Remera Metallica",
+    "description": "6 cuotas sin interés de $4.665",
+    "price": 27990,
+    "stock": 4,
+    "image": "img/remera-metallica.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Remera Motor Head",
+    "description": "6 cuotas sin interés de $4.665",
+    "price": 27990,
+    "stock": 5,
+    "image": "img/remera-motorhead.webp"
+  },
+  {
+    "id": 17,
+    "name": "Remera Nirvana",
+    "description": "6 cuotas sin interés de $4.665",
+    "price": 27990,
+    "stock": 18,
+    "image": "img/remera-nirvana.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Remera White Punk",
+    "description": "6 cuotas sin interés de $4.665",
+    "price": 27990,
+    "stock": 9,
+    "image": "img/remera-punk-white.jpg"
+  },
+  {
+  "id": 19,
+  "name": "Remera Ramones",
+  "description": "6 cuotas sin interés de $4.665",
+  "price": 27000,
+  "stock": 4,
+  "image": "img/remera-ramones.webp"
+},
+{
+"id": 20,
+"name": "Remera The Beatles",
+"description": "6 cuotas sin interés de $4.665",
+"price": 27990,
+"stock": 2,
+"image": "img/remera-the-beatles.jpg"
+},
+{
+  "id": 21,
+  "name": "Buzo Guns W",
+  "description": "6 cuotas sin interés de $9.998",
+  "price": 44990,
+  "stock": 6,
+  "image": "img/women/buzo-guns.webp"
+  },
+  {
+    "id": 22,
+    "name": "Campera De Jean",
+    "description": "6 cuotas sin interés de $10.000",
+    "price": 60000,
+    "stock": 2,
+    "image": "img/women/campera-jean.webp"
+    },
+    {
+      "id": 23,
+      "name": "Pantalones Cargo",
+      "description": "6 cuotas sin interés de $7490",
+      "price": 44990,
+      "stock": 4,
+      "image": "img/women/cargo-camuflaje.jpg"
+      },
+      {
+        "id": 24,
+        "name": "Medias FF",
+        "description": "6 cuotas sin interés de $900",
+        "price": 5400,
+        "stock": 6,
+        "image": "img/women/medias-ff.jpg"
+        },
+        {
+          "id": 25,
+          "name": "Remera Ramones W",
+          "description": "6 cuotas sin interés de $4665",
+          "price": 27990,
+          "stock": 6,
+          "image": "img/women/remera-ramones-w.jpg"
+          },
+          {
+            "id": 26,
+            "name": "Zapatillas mick",
+            "description": "6 cuotas sin interés de $9.998",
+            "price": 44990,
+            "stock": 6,
+            "image": "img/women/zapatillas-cuero.jpg"
+            }
+
+
+]
+
