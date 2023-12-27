@@ -1,46 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import './ItemListContainer.css'; 
-import ProductCatalog from '../productCatalog/productCatalog';
+import { useEffect, useState } from "react";
+import ItemList from '../ItemList/ItemList/'
+import { pedirDatos } from "../../utils/utils";
+import { useParams } from "react-router-dom";
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = () => {
 
-  const [loading, setLoading] = useState(true);
-  const [items, setItems] = useState([]);
+  const [productos, setProductos] = useState([])
+  const [loading, setLoading] = useState(true)
+  const { categoryId } = useParams ()
+ 
+  console.log(categoryId)
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('https://api.ejemplo.com/items');
-        const data = await response.json();
-
-        setItems(data);
-        setLoading(false);  
-      } catch (error) {
-        console.error('Error al obtener datos:', error);
-        setLoading(false);  
-      }
-    };
-
-    const delay = setTimeout(() => {
-      fetchData();
-    }, 2000);
-
-    return () => clearTimeout(delay);
-  }, []);
+    setLoading(true);
+  
+    pedirDatos()
+      .then((data) => {
+        const items = categoryId
+                      ? data.filter(prod => prod.category === categoryId)
+                      : data
+        setProductos( items );
+      })
+      .finally(() => setLoading(false));
+  }, [categoryId]);
 
   return (
-    <div className="container"> 
-      <h2 className="greeting">{greeting || "Man: New Arrivals"}</h2>
 
-      {loading ? (
-        <p>Cargando...</p>
-      ) : (
-        <>
-          <ProductCatalog items={items} />
-        </>
-      )}
-    </div>
-  );
+    <>
+    {loading ? (
+      <h2 className="text-center text-4xl mt-8"> cargando... </h2>
+
+    ) : 
+    (
+      <ItemList productos={productos} />
+    )
+  }
+    </>
+  )
+
 };
 
 export default ItemListContainer;

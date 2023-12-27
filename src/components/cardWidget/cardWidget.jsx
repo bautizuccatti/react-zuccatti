@@ -1,14 +1,15 @@
+
 import React from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
-
-const CartWidget = () => {
-  const itemsInCart = 4; 
+import './CardWidget.css';
+const CartWidget = ({ isScrolled }) => {
+  const itemsInCart = 4;
 
   return (
-    <div className="d-flex align-items-center">
+    <div className={`d-flex align-items-center ${isScrolled ? 'scrolled' : ''}`}>
       <FaShoppingCart size={20} className="mr-2" />
       {itemsInCart > 0 && (
-        <span className="badge badge-danger">
+        <span className={`badge badge-danger ${isScrolled ? 'scrolled' : ''}`}>
           {itemsInCart}
         </span>
       )}

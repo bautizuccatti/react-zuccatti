@@ -7,7 +7,8 @@ import ProductCatalog from './components/productCatalog/productCatalog';
 import Navbar from './components/navBar/navBar';
 import CategoryList from './components/categoryList/CategoryList';
 import ItemListContainer from './components/itemListContainer/itemListContainer';
-import Women from './components/women/women';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+
 
 
 
@@ -16,11 +17,10 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<ItemListContainer />} />
-
-        <Route path="/productos/:categoryId" element={<ItemListContainer />} />
-  
-        <Route path="/Women" element={ <Women/>}/>
+      <Route path="/" element={<ItemListContainer />} />
+      <Route path="/productos/:categoryId" element={<ItemListContainer />} />
+      <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+      <Route path="/productos/:genderId" element={<ItemDetailContainer />} />
       </Routes>
     </Router>
   );
@@ -44,21 +44,3 @@ export default App;
 
 
 
-
-
-
-
-
-
-// function App() {
-//   return (
-//     <>
-//       <Navbar />
-//       <CategoryList />
-//       <ItemListContainer greeting="Man: New Arrivals" />
-//       <ProductCatalog />
-//     </>
-//   );
-// }
-
-// export default App;

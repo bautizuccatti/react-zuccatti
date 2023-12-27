@@ -1,17 +1,4 @@
-.list-container {
-    text-align: center;
-    margin: 20px;
-  }
-  
-  .list-title {
-    color: rgb(0, 0, 0);
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .divider {
-    width: 50%;
-    border-top: 2px solid rgb(0, 0, 0);
-  }
-  
-  
+h2{
+  color: black;
+
+}

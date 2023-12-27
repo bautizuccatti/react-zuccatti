@@ -1,4 +1,5 @@
-import "./categoryList.css";
+import React from "react";
+import "./CategoryList.css";
 
 const CategoryList = () => {
   return (

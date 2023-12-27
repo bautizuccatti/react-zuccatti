@@ -1,11 +1,14 @@
-[
+
+ [
   {
     "id": 1,
     "name": "Remera Stones",
     "description": "6 cuotas sin interés de $4.665",
     "price": 27990,
     "stock": 8,
-    "image": "img/remera-stones.jpg"
+    "img": "img/remera-stones.jpg",
+    "gender": "men",
+    "category": "remera"
   },
   {
     "id": 2,
@@ -13,7 +16,9 @@
     "description": "6 cuotas sin interés de $7.498",
     "price": 44990,
     "stock": 2,
-    "image": "img/bermuda-camel.webp"
+    "img": "img/bermuda-camel.webp",
+    "gender": "men",
+    "category": "bermuda"
   },
   {
     "id": 3,
@@ -21,14 +26,18 @@
     "description": "6 cuotas sin interés de $9.998",
     "price": 59990,
     "stock": 14,
-    "image": "img/camisa-legend.webp"
+    "img": "img/camisa-legend.webp",
+    "gender": "men",
+    "category": "camisa"
   },
   {
     "id": 4,
     "name": "Remera Iron Maiden",
     "description": "6 cuotas sin interés de $4.665",
     "price": 27900,
-    "image": "img/remera-iron-maiden.jpg"
+    "img": "img/remera-iron-maiden.jpg",
+    "gender": "men",
+    "category": "remera"
   },
   {
     "id": 5,
@@ -37,7 +46,9 @@
     "price": 119900,
     "stock": 0,
     "status": "sin stock",
-    "image": "img/borcegos.webp"
+    "img": "img/borcegos.webp",
+    "gender": "men",
+    "category": "calzado"
   },
   {
     "id": 6,
@@ -45,7 +56,9 @@
     "description": "6 cuotas sin interés de $8.332",
     "price": 49990,
     "stock": 2,
-    "image": "img/bermuda-stevie-virginia.webp"
+    "img": "img/bermuda-stevie-virginia.webp",
+    "gender": "men",
+    "category": "bermuda"
   },
   {
     "id": 7,
@@ -53,7 +66,9 @@
     "description": "6 cuotas sin interés de $7.498",
     "price": 44990,
     "stock": 8,
-    "image": "img/buzo-rolling.jpg"
+    "img": "img/buzo-rolling.jpg",
+    "gender": "men",
+    "category": "buzo"
   },
   {
     "id": 8,
@@ -61,7 +76,9 @@
     "description": "6 cuotas sin interés de $9.998",
     "price": 59990,
     "stock": 1,
-    "image": "img/camisa-manga-corta-richard.webp"
+    "img": "img/camisa-manga-corta-richard.webp",
+    "gender": "men",
+    "category": "camisa"
   },
   {
     "id": 9,
@@ -69,7 +86,9 @@
     "description": "6 cuotas sin interés de $998",
     "price": 5990,
     "stock": 3,
-    "image": "img/medias-nirvana.jpg"
+    "img": "img/medias-nirvana.jpg",
+    "gender": "men",
+    "category": "medias"
   },
   {
     "id": 10,
@@ -77,7 +96,9 @@
     "description": "6 cuotas sin interés de $4.665",
     "price": 27990,
     "stock": 2,
-    "image": "img/remera-acdc.jpg"
+    "img": "img/remera-acdc.jpg",
+    "gender": "men",
+    "category": "remera"
   },
   {
     "id": 11,
@@ -85,7 +106,9 @@
     "description": "6 cuotas sin interés de $4.665",
     "price": 27990,
     "stock": 4,
-    "image": "img/remera-guns.jpg"
+    "img": "img/remera-guns.jpg",
+    "gender": "men",
+    "category": "remera"
   },
   {
     "id": 12,
@@ -93,15 +116,20 @@
     "description": "6 cuotas sin interés de $4.665",
     "price": 27990,
     "stock": 2,
-    "image": "img/remera-black-sabbath.jpg"
+    "img": "img/remera-black-sabbath.jpg",
+    "gender": "men",
+    "category": "remera"
   },
+
   {
     "id": 13,
     "name": "Remera Masfits",
     "description": "6 cuotas sin interés de $4.665",
     "price": 27990,
     "stock": 3,
-    "image": "img/remera-masfits.webp"
+    "img": "img/remera-masfits.webp",
+    "gender": "men",
+    "category": "remera"
   },
   {
     "id": 14,
@@ -109,7 +137,9 @@
     "description": "6 cuotas sin interés de $4.665",
     "price": 27990,
     "stock": 0,
-    "image": "img/remera-megadeth.jpg"
+    "img": "img/remera-megadeth.jpg",
+    "gender": "men",
+    "category": "remera"
   },
   {
     "id": 15,
@@ -117,7 +147,9 @@
     "description": "6 cuotas sin interés de $4.665",
     "price": 27990,
     "stock": 4,
-    "image": "img/remera-metallica.jpg"
+    "img": "img/remera-metallica.jpg",
+    "gender": "men",
+    "category": "remera"
   },
   {
     "id": 16,
@@ -125,7 +157,9 @@
     "description": "6 cuotas sin interés de $4.665",
     "price": 27990,
     "stock": 5,
-    "image": "img/remera-motorhead.webp"
+    "img": "img/remera-motorhead.webp",
+    "gender": "men",
+    "category": "remera"
   },
   {
     "id": 17,
@@ -133,7 +167,9 @@
     "description": "6 cuotas sin interés de $4.665",
     "price": 27990,
     "stock": 18,
-    "image": "img/remera-nirvana.jpg"
+    "img": "img/remera-nirvana.jpg",
+    "gender": "men",
+    "category": "remera"
   },
   {
     "id": 18,
@@ -141,15 +177,20 @@
     "description": "6 cuotas sin interés de $4.665",
     "price": 27990,
     "stock": 9,
-    "image": "img/remera-punk-white.jpg"
+    "img": "img/remera-punk-white.jpg",
+    "gender": "men",
+    "category": "remera"
   },
+  
   {
   "id": 19,
   "name": "Remera Ramones",
   "description": "6 cuotas sin interés de $4.665",
   "price": 27000,
   "stock": 4,
-  "image": "img/remera-ramones.webp"
+  "img": "img/remera-ramones.webp",
+  "gender": "men",
+  "category": "remera"
 },
 {
 "id": 20,
@@ -157,7 +198,9 @@
 "description": "6 cuotas sin interés de $4.665",
 "price": 27990,
 "stock": 2,
-"image": "img/remera-the-beatles.jpg"
+"img": "img/remera-the-beatles.jpg",
+"gender": "men",
+"category": "remera"
 },
 {
   "id": 21,
@@ -165,7 +208,9 @@
   "description": "6 cuotas sin interés de $9.998",
   "price": 44990,
   "stock": 6,
-  "image": "img/women/buzo-guns.webp"
+  "img": "img/women/buzo-guns.webp",
+  "gender": "women",
+  "category": "buzo"
   },
   {
     "id": 22,
@@ -173,7 +218,9 @@
     "description": "6 cuotas sin interés de $10.000",
     "price": 60000,
     "stock": 2,
-    "image": "img/women/campera-jean.webp"
+    "img": "img/women/campera-jean.webp",
+    "gender": "women",
+    "category": "campera"
     },
     {
       "id": 23,
@@ -181,7 +228,9 @@
       "description": "6 cuotas sin interés de $7490",
       "price": 44990,
       "stock": 4,
-      "image": "img/women/cargo-camuflaje.jpg"
+      "img": "img/women/cargo-camuflaje.jpg",
+      "gender": "women",
+      "category": "pantalon"
       },
       {
         "id": 24,
@@ -189,7 +238,9 @@
         "description": "6 cuotas sin interés de $900",
         "price": 5400,
         "stock": 6,
-        "image": "img/women/medias-ff.jpg"
+        "img": "img/women/medias-ff.jpg",
+        "gender": "women",
+        "category": "medias"
         },
         {
           "id": 25,
@@ -197,7 +248,9 @@
           "description": "6 cuotas sin interés de $4665",
           "price": 27990,
           "stock": 6,
-          "image": "img/women/remera-ramones-w.jpg"
+          "img": "img/women/remera-ramones-w.jpg",
+          "gender": "women",
+          "category": "remera"
           },
           {
             "id": 26,
@@ -205,9 +258,12 @@
             "description": "6 cuotas sin interés de $9.998",
             "price": 44990,
             "stock": 6,
-            "image": "img/women/zapatillas-cuero.jpg"
+            "img": "img/women/zapatillas-cuero.jpg",
+            "gender": "women",
+            "category": "calzado"
             }
 
 
 ]
+
 
