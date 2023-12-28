@@ -1,9 +1,9 @@
 import React from "react";
-import productData from "../../mock/data.json"; // Renamed import
+import productData from "../../mock/data.json"; 
 
 const ItemDetail = ({ item }) => {
   if (!item) {
-    // You can handle the case when item is not defined
+    
     return <div>No item data</div>;
   }
 

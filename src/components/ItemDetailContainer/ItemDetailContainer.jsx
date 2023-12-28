@@ -7,7 +7,7 @@ import Loader from '../Loader/Loader';
 const ItemDetailContainer = () => {
   const [loading, setLoading] = useState(true);
   const [item, setItem] = useState(null);
-  const { itemId } = useParams(); // Corregido: Invoca useParams
+  const { itemId } = useParams(); 
 
   useEffect(() => {
     pedirDatos(true)
@@ -15,7 +15,7 @@ const ItemDetailContainer = () => {
         setItem(data.find((prod) => prod.id === Number(itemId)));
       })
       .finally(() => setLoading(false));
-  }, [itemId]); // Se añadió itemId como dependencia
+  }, [itemId]); 
 
   return (
     <>
