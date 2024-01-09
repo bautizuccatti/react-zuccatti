@@ -1,0 +1,25 @@
+/* Footer.css */
+
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    border-top: inset 2px #000000;
+
+  }
+  
+  .redes-sociales {
+    margin-top: 10px;
+  }
+  
+  .redes-sociales a {
+    color: #000000;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .redes-sociales a:hover {
+    text-decoration: underline;
+  }
+  

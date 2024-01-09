@@ -1,22 +1,9 @@
 
 
-// const Button = () => {
-//     return (
-//         <button
-//         variant="primary"
-//         className="product-buy-button"
-//         onClick={() => handleBuyClick(product)}
-//       >
-//         Comprar
-//       </button>
-
 import { children } from "react"
-
+import './Boton.css';
     
-//     );
-//   };
-  
-//   export default Button;
+
 
 const Boton = ({ children, onClick }) => {
   return(

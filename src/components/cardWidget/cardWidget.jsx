@@ -1,10 +1,8 @@
-
 import React from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
 import './CardWidget.css';
-const CartWidget = ({ isScrolled }) => {
-  const itemsInCart = 4;
 
+const CartWidget = ({ isScrolled, itemsInCart }) => {
   return (
     <div className={`d-flex align-items-center ${isScrolled ? 'scrolled' : ''}`}>
       <FaShoppingCart size={20} className="mr-2" />

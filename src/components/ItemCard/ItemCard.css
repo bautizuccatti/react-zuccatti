@@ -7,7 +7,7 @@
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
+   
   .card-img-top {
     width: 100%;
     border-radius: 8px 8px 0 0;
@@ -26,3 +26,11 @@
     color: #666;
     margin-bottom: 15px;
   }
+
+  .boton-verMas{
+    text-decoration: none;
+    color: black;
+    border-color: black;
+  }
+
+  

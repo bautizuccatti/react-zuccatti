@@ -13,8 +13,8 @@ const ItemCard = ({ item }) => {
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
         <p className="card-text">{description}</p>
-        <p className="card-text">Precio: {price}</p>
-        <Boton>
+        <p className="card-text">Precio: ${price}</p>
+        <Boton style={{ color: 'red' }} className="boton-verMas">
           <Link to={`/Item/${item.id}`}>Ver Más</Link>
         </Boton>
       </div>

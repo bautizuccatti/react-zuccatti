@@ -1,24 +1,34 @@
-import { Button } from "react-bootstrap"
+import React, { useState } from 'react';
 
+const QuantitySelector = ({ onChange }) => {
+  const [quantity, setQuantity] = useState(1);
 
-const QuantitySelector = ({cantidad, stock, setCantidad}) => {
-    const handleSumar = () => {
-        cantidad < stock && setCantidad (cantidad + 1)
+  const handleDecrement = () => {
+    if (quantity > 1) {
+      const newQuantity = quantity - 1;
+      setQuantity(newQuantity);
+      onChange(newQuantity);
     }
-    const handleRestar = () => {
-        cantidad < 1 && setCantidad (cantidad - 1)
-    }
-    
-    return(
-       <div>
-        <Button onClick={handleRestar}>-</Button>
-        <span>{cantidad}</span>
-        <Button onClick={handleSumar}>+</Button>
-       </div>
-  
-    )
-  
-  }
-  
-  
-  export default QuantitySelector;
+  };
+
+  const handleIncrement = () => {
+    const newQuantity = quantity + 1;
+    setQuantity(newQuantity);
+    onChange(newQuantity);
+  };
+
+  return (
+    <div className="quantity-selector">
+      <button onClick={handleDecrement}>-</button>
+      <input
+        type="number"
+        min="1"
+        value={quantity}
+        readOnly
+      />
+      <button onClick={handleIncrement}>+</button>
+    </div>
+  );
+};
+
+export default QuantitySelector;

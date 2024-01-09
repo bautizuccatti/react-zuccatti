@@ -1,0 +1,33 @@
+
+.itemDetail {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .itemDetail img {
+    max-width: 100%;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    width: 350px;
+  }
+  
+  .itemDetailName {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .itemDetailDescription {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .itemDetailPrice {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000000; /* Color naranja como ejemplo */
+  }
+
