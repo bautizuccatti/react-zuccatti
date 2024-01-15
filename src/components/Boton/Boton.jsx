@@ -7,7 +7,7 @@ import './Boton.css';
 
 const Boton = ({ children, onClick }) => {
   return(
-    <button onClick={onClick}>
+    <button className="my-button" onClick={onClick}>
       {children}
 
     </button>

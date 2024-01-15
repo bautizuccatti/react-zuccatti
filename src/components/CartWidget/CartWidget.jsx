@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
-import './CardWidget.css';
+import './CartWidget.css';
 
 const CartWidget = ({ isScrolled, itemsInCart }) => {
   return (

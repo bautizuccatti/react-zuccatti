@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import CardWidget from '../CardWidget/CardWidget';
 import './NavBar.css';
+import CartWidget from '../CartWidget/CartWidget';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,7 +33,7 @@ const Navbar = () => {
         <Link to="/productos/calzado">CALZADO</Link>
         <Link to="/productos/women">WOMEN</Link>
       </div>
-      <CardWidget isScrolled={isScrolled} itemsInCart={itemsInCart} />
+      <CartWidget/>
     </div>
   );
 }

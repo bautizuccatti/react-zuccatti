@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Card, Button, Modal, Form } from 'react-bootstrap';
-import './ProductCatalog.css';
 import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
 import { pedirDatos } from '../../utils/utils';
 
@@ -42,13 +41,6 @@ const ProductCatalog = () => {
                 <Card.Title className="product-name">{product.name}</Card.Title>
                 <Card.Text className="product-description">{product.description}</Card.Text>
                 <Card.Text className="product-price">Precio: {product.price}</Card.Text>
-                <Boton
-                  variant="primary"
-                  className="product-buy-button"
-                  onClick={() => handleBuyClick(product)}
-                >
-                  Comprar
-                </Boton>
               </Card.Body>
             </Card>
           </div>

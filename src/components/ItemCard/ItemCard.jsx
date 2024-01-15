@@ -15,7 +15,7 @@ const ItemCard = ({ item }) => {
         <p className="card-text">{description}</p>
         <p className="card-text">Precio: ${price}</p>
         <Boton style={{ color: 'red' }} className="boton-verMas">
-          <Link to={`/Item/${item.id}`}>Ver Más</Link>
+          <Link to={`/Item/${item.id}`}> Comprar </Link>
         </Boton>
       </div>
     </div>

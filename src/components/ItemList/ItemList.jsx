@@ -3,6 +3,7 @@ import React from 'react';
 import ItemCard from '../ItemCard/ItemCard';
 import './ItemList.css';
 
+
 const ItemList = ({ productos }) => {
   return (
     <section className="item-list-container">

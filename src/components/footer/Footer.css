@@ -1,4 +1,4 @@
-/* Footer.css */
+
 
 footer {
     background-color: #ffffff;
@@ -6,6 +6,7 @@ footer {
     padding: 20px;
     text-align: center;
     border-top: inset 2px #000000;
+    margin-top: 15px;
 
   }
   
@@ -19,7 +20,5 @@ footer {
     text-decoration: none;
   }
   
-  .redes-sociales a:hover {
-    text-decoration: underline;
-  }
+  
   

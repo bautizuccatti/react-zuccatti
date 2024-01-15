@@ -1,10 +1,11 @@
 import React from 'react';
-import './Loader.css'; 
+import './Loader.css';
+import logo from '/img/logo.png';
 
 const Loader = () => {
   return (
     <div className="loader-container">
-      <div className="loader"></div>
+      <img src={logo} alt="Logo" className="loader" />
     </div>
   );
 }
