@@ -7,7 +7,7 @@
   }
   .my-button:hover {
     transition: all 0.2s;
-    transform: scale(1.05); /* Ajusta el valor según sea necesario para el agrandamiento */
+    transform: scale(1.05); 
   }
   .my-button:active {
     background-color: #000000;

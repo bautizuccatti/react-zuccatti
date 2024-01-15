@@ -5,7 +5,7 @@ import CartWidget from '../CartWidget/CartWidget';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [itemsInCart, setItemsInCart] = useState(0); // Inicializa con el valor inicial deseado
+  const [itemsInCart, setItemsInCart] = useState(0); 
 
   useEffect(() => {
     const handleScroll = () => {

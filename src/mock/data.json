@@ -35,6 +35,7 @@
 "name": "Remera Iron Maiden",
 "description": "6 cuotas sin interés de $4.665",
 "price": 27900,
+"stock": 14,
 "img": "/img/remera-iron-maiden.jpg",
 "gender": "men",
 "category": "remera"
@@ -75,7 +76,7 @@
 "name": "Camisa Manga Corta Richard",
 "description": "6 cuotas sin interés de $9.998",
 "price": 59990,
-"stock": 1,
+"stock": 0,
 "img": "/img/camisa-manga-corta-richard.webp",
 "gender": "men",
 "category": "camisa"
@@ -105,7 +106,7 @@
 "name": "Remera Guns",
 "description": "6 cuotas sin interés de $4.665",
 "price": 27990,
-"stock": 4,
+"stock": 0,
 "img": "/img/remera-guns.jpg",
 "gender": "men",
 "category": "remera"
@@ -253,7 +254,7 @@
 "name": "Zapatillas mick",
 "description": "6 cuotas sin interés de $9.998",
 "price": 44990,
-"stock": 6,
+"stock": 0,
 "img": "/img/women/zapatillas-cuero.jpg",
 "category": "women"
 },
@@ -289,7 +290,7 @@
 "name": "Remera Rolling",
 "description": "6 cuotas sin interés de $4.166",
 "price": 24990,
-"stock": 6,
+"stock": 0,
 "img": "/img/women/remera-rolling.webp",
 "category": "women"
 },
@@ -298,7 +299,7 @@
 "name": "Botas Motor",
 "description": "6 cuotas sin interés de $24.999",
 "price": 149999,
-"stock": 6,
+"stock": 12,
 "img": "/img/botas.webp",
 "category": "calzado"
 },
@@ -307,7 +308,7 @@
 "name": "Buzo Appetite For Destruction",
 "description": "6 cuotas sin interés de $9.983",
 "price": 59900,
-"stock": 6,
+"stock": 5,
 "img": "/img/buzo-guns.jpg",
 "category": "buzo"
 },
@@ -325,7 +326,7 @@
 "name": "Buzo Ronnie",
 "description": "6 cuotas sin interés de $9.983",
 "price": 59900,
-"stock": 6,
+"stock": 3,
 "img": "/img/buzo-ronnie.webp",
 "category": "buzo"
 },
@@ -344,7 +345,7 @@
 "name": "Zapatillas ramon",
 "description": "6 cuotas sin interés de $24.999",
 "price": 149999,
-"stock": 6,
+"stock": 8,
 "img": "/img/zapatillas-dogg.jpg",
 "category": "calzado"
 },
@@ -353,7 +354,7 @@
 "name": "Camisa classic Gris",
 "description": "6 cuotas sin interés de $9.998",
 "price": 59990,
-"stock": 5,
+"stock": 14,
 "img": "/img/camisa-classic-gris.webp",
 "gender": "men",
 "category": "camisa"
@@ -363,7 +364,7 @@
 "name": "Camisa Guns N Roses",
 "description": "6 cuotas sin interés de $9.998",
 "price": 59990,
-"stock": 2,
+"stock": 3,
 "img": "/img/camisa-gnr.webp",
 "gender": "men",
 "category": "camisa"
@@ -373,7 +374,7 @@
 "name": "Camisa HT",
 "description": "6 cuotas sin interés de $9.998",
 "price": 59990,
-"stock": 6,
+"stock": 0,
 "img": "/img/camisa-ht.webp",
 "gender": "men",
 "category": "camisa"
@@ -433,7 +434,7 @@
 "name": "Sex Pistols Remera",
 "description": "6 cuotas sin interés de $4.665",
 "price": 27990,
-"stock": 6,
+"stock": 7,
 "img": "/img/women/remera-sexpistols.webp",
 "category": "women"
 },
@@ -442,7 +443,7 @@
 "name": "Remera Nirvana",
 "description": "6 cuotas sin interés de $4.665",
 "price": 27990,
-"stock": 6,
+"stock": 4,
 "img": "/img/women/remera-nirvana.webp",
 "category": "women"
 }

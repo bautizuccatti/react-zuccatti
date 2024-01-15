@@ -1,4 +1,5 @@
-import Boton from '../Boton/Boton'
+import Boton from '../Boton/Boton';
+import './QuantitySelector.css';
 
 const QuantitySelector = ({ cantidad, stock, setCantidad }) => {
   const handleSumar = () => {
@@ -6,30 +7,34 @@ const QuantitySelector = ({ cantidad, stock, setCantidad }) => {
   };
 
   const handleRestar = () => {
-    cantidad > 1 && setCantidad(cantidad - 1);
+    cantidad > 0 && setCantidad(cantidad - 1);
   };
 
   return (
-    <div className="flex gap-4 items-center">
-      <Boton
+    <div className="flex items-center">
+      <button
         onClick={handleRestar}
-        className={`${cantidad === 1 ? 'bg-red-300' : 'bg-blue-600'} rounded py-2 px-4 text-white font-semibold`}
-        disabled={cantidad === 1}
+        className={`${
+          cantidad === 0 ? 'bg-red-300' : 'bg-blue-600'
+        } rounded py-2 px-4 text-white font-semibold mr-2`}
+        disabled={cantidad === 0}
       >
         -
-      </Boton>
-
-      <span>{cantidad}</span>
-      <Boton
+      </button>
+      <div className="quantity-container">
+        <span className={`quantity-text ${cantidad === 0 ? 'fade-out' : 'fade-in'}`}>
+          {cantidad}
+        </span>
+      </div>
+      <button
         onClick={handleSumar}
-        className={cantidad === stock 
-          ? `bg-red-300 rounded py-2 px-4 text-white font-semibold`
-          : `bg-blue-600 rounded py-2 px-4 text-white font-semibold`
-        }
+        className={`${
+          cantidad === stock ? 'bg-red-300' : 'bg-blue-600'
+        } rounded py-2 px-4 text-white font-semibold ml-2`}
         disabled={cantidad === stock}
       >
         +
-      </Boton>
+      </button>
     </div>
   );
 };

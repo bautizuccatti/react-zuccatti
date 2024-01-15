@@ -1,5 +1,7 @@
-
-
+.carrito{
+  width: 40px;
+  height: 40px;
+}
 .scrolled .badge {
   background-color: #00000000; 
   color: black;
