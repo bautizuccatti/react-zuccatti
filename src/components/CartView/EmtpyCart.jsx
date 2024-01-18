@@ -1,19 +1,20 @@
-// import { Link } from "react-router-dom"
-// import Boton from "../../ejemplos/Boton"
+import React from "react"
+import { Link } from "react-router-dom"
+import Boton from "../Boton/Boton"
 
 
-// const EmtpyCart = () => {
+const EmtpyCart = () => {
 
-//     return (
-//         <section className="container m-auto mt-8">
-//         <h2 className="text-4xl font-semibold">Tu carrito está vacío</h2>
-//         <hr />
-//         <p>Agrega algún producto a tu carrito</p>
-//         <Boton>
-//           <Link to={"/"}>Volver</Link>
-//         </Boton>
-//       </section>
-//     )
-// }
+    return (
+        <section className="container m-auto mt-8">
+        <h2 className="text-4xl font-semibold">Tu carrito está vacío</h2>
+        <hr />
+        <p>Agrega algún producto a tu carrito</p>
+        <Boton>
+          <Link to={"/"}>Volver</Link>
+        </Boton>
+      </section>
+    )
+}
 
-// export default EmtpyCart
+export default EmtpyCart

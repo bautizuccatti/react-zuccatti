@@ -54,7 +54,7 @@ const ItemListContainer = () => {
                     fontSize: '18px',
                   }}
                 >
-                  Ver más
+                  Mostrar Mas Productos
                 </Boton>
               )}
             </>

@@ -1,4 +1,3 @@
-import Boton from '../Boton/Boton';
 import './QuantitySelector.css';
 
 const QuantitySelector = ({ cantidad, stock, setCantidad }) => {

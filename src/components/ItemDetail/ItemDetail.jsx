@@ -3,19 +3,23 @@ import './ItemDetail.css';
 import Boton from '../Boton/Boton';
 import { useNavigate } from "react-router-dom";
 import QuantitySelector from "./QuantitySelector";
-import  CartContext  from '../../context/CartContext';
+import {CartContext} from '../../context/CartContext';
 
 const ItemDetail = ({ item }) => {
   const navigate = useNavigate();
   const [cantidad, setCantidad] = useState(1);
+  const { addToCart } = useContext(CartContext);
 
   const handleAgregar = () => {
-    // const itemToCart = {
-    //   ...item,
-    //   cantidad, 
-    // };
+    const itemToCart = {
+      ...item,
+      cantidad,
+    };
 
-  }
+    addToCart(itemToCart);
+    navigate('/cart'); // Redirige al carrito después de agregar el elemento
+  };
+
   return (
     <article className="itemDetail">
       <img src={item.img} alt={item.name} />
@@ -28,16 +32,15 @@ const ItemDetail = ({ item }) => {
       ) : (
         
         <>
-          <QuantitySelector 
+          <QuantitySelector
             cantidad={cantidad}
             stock={item.stock}
             setCantidad={setCantidad}
           />
-          <Boton onClick={handleAgregar} disabled={item.stock === 0}>
-            Agregar al carrito
-          </Boton>
+          <Boton onClick={handleAgregar} disabled={item.stock === 0}>Agregar al carrito</Boton>
         </>
       )}
+
     </article>
   );
 };
