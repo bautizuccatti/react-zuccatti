@@ -3,22 +3,19 @@ import './ItemDetail.css';
 import Boton from '../Boton/Boton';
 import { useNavigate } from "react-router-dom";
 import QuantitySelector from "./QuantitySelector";
-import { CartContext } from "../../context/CartContext";
+import  CartContext  from '../../context/CartContext';
 
 const ItemDetail = ({ item }) => {
   const navigate = useNavigate();
   const [cantidad, setCantidad] = useState(1);
-  const { addToCart, isInCart } = useContext(CartContext);
 
   const handleAgregar = () => {
-    const itemToCart = {
-      ...item,
-      cantidad, 
-    };
+    // const itemToCart = {
+    //   ...item,
+    //   cantidad, 
+    // };
 
-    addToCart(itemToCart);
-  };
-
+  }
   return (
     <article className="itemDetail">
       <img src={item.img} alt={item.name} />
@@ -29,6 +26,7 @@ const ItemDetail = ({ item }) => {
       {item.stock === 0 ? (
         <p className="no-stock">Sin stock</p>
       ) : (
+        
         <>
           <QuantitySelector 
             cantidad={cantidad}

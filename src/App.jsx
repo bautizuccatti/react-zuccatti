@@ -15,7 +15,6 @@ import Footer from './components/footer/Footer';
 
 function App() {
   const [cart, setCart] = useState([])
-  console.log(cart)
   return (
   <CartContext.Provider value={{
     cart
@@ -28,13 +27,15 @@ function App() {
       <Route path="/item/:itemId" element={<ItemDetailContainer />} />
       </Routes>
       <Footer/>
-    </Router>
+    </Router> 
   </CartContext.Provider>
 
   );
 }
 
 export default App;
+
+
 
 
 

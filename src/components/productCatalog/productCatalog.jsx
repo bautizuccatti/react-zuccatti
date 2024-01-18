@@ -22,7 +22,7 @@ const ProductCatalog = () => {
   };
 
   const handleAddToCart = (product, selectedSize) => {
-    console.log(`Agregado al carrito: ${product.name}, Talla: ${selectedSize}`);
+    // console.log(`Agregado al carrito: ${product.name}, Talla: ${selectedSize}`);
   };
 
   return (
