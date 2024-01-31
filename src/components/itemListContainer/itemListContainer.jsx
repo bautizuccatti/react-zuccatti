@@ -1,68 +1,49 @@
-import { useEffect, useState } from "react";
-import ItemList from '../ItemList/ItemList/';
-import { pedirDatos } from "../../utils/utils";
+import { useEffect, useState } from "react"
+import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import Loader from "../Loader/Loader";
-import Boton from "../Boton/Boton";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../../firebase/config";
 
 const ItemListContainer = () => {
+  const [productos, setProductos] = useState([])
+  const [loading, setLoading] = useState(true)
 
-  const [productos, setProductos] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [visibleProducts, setVisibleProducts] = useState(9); 
-  const { categoryId } = useParams();
-  const [loadingMore, setLoadingMore] = useState(false); 
+  const { categoryId } = useParams()
 
   useEffect(() => {
-    setLoading(true);
+      setLoading(true)
 
-    pedirDatos()
-      .then((data) => {
-        const items = categoryId
-                      ? data.filter(prod => prod.category === categoryId)
-                      : data
-        setProductos(items);
-      })
-      .finally(() => setLoading(false));
-  }, [categoryId]);
+      const productosRef = collection(db, 'productos')
+      const docsRef = categoryId
+                        ? query( productosRef, where('category', '==', categoryId))
+                        : productosRef
+  
+      getDocs(docsRef)
+        .then((querySnapshot) => {
+          const docs = querySnapshot.docs.map(doc => {
+            return {
+              ...doc.data(),
+              id: doc.id
+            }
+          })
+        
+          setProductos( docs )
+        })
+        .finally(() => setLoading(false))
 
-  const loadMoreProducts = () => {
-    setLoadingMore(true); 
-    setTimeout(() => {
-      setVisibleProducts(prevVisible => prevVisible + 6);
-      setLoadingMore(false); 
-    }, 1000); 
-  };
+  }, [categoryId])
 
   return (
-    <div style={{ textAlign: 'center' }}>
-      {loading ? (
-        <Loader />
-      ) : (
-        <>
-          <ItemList productos={productos.slice(0, visibleProducts)} />
-          {visibleProducts < productos.length && (
-            <>
-              {loadingMore ? (
-                <Loader />
-              ) : (
-                <Boton
-                  onClick={loadMoreProducts}
-                  style={{
-                    marginTop: '20px',
-                    padding: '10px 20px',
-                    fontSize: '18px',
-                  }}
-                >
-                  Mostrar Mas Productos
-                </Boton>
-              )}
-            </>
-          )}
-        </>
-      )}
-    </div>
-  );
+    <>
+      {
+        loading
+          ? <Loader/>
+          : <ItemList productos={productos}/>
+      }
+    </>
+  )
 };
 
 export default ItemListContainer;
+

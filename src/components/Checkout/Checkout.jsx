@@ -3,6 +3,8 @@ import { CartContext } from "../../context/CartContext";
 import { db } from "../../firebase/config";
 import { collection, writeBatch, addDoc, setDoc, doc, updateDoc, getDoc, query, where, documentId, getDocs } from "firebase/firestore";
 import Swal from "sweetalert2";
+import Boton from "../Boton/Boton";
+
 
 const Checkout = () => {
   const { cart, totalCart, clearCart } = useContext(CartContext);
@@ -41,14 +43,9 @@ const Checkout = () => {
 
     const outOfStock = []
  
-    // const promesas = cart.map((item) => {
-    //   const ref = doc(productsRef, item.id)
-    //   return getDoc(ref)
-    // })
+  
 
-    // const docs = await Promise.all(promesas)
-    // console.log(docs)
-    // docs.forEach(doc => {
+
     querySnapshot.docs.forEach(doc => {
       const item = cart.find(prod => prod.id === doc.id)
       const stock = doc.data().stock
@@ -122,9 +119,9 @@ const Checkout = () => {
           onChange={handleInputChange}
           name="email"
         />
-        <button type="submit" className="bg-blue-500 text-white py-2">
+        <Boton>
           Enviar
-        </button>
+        </Boton>
       </form>
     </div>
   );

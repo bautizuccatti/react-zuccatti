@@ -17,7 +17,7 @@ const ItemDetail = ({ item }) => {
     };
 
     addToCart(itemToCart);
-    navigate('/cart'); // Redirige al carrito después de agregar el elemento
+    navigate('/cart');
   };
 
   return (
